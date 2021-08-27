@@ -503,10 +503,26 @@ nav ul li .active:hover {
 .testimonial {
     padding: var(--main-padding) 0;
 }
+.testimonial .container {
+    overflow: hidden;
+}
 .testimonial .container .clients {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
+    animation-name: transform;
+    animation-delay: 10s;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+}
+@keyframes transform {
+    to {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+}
 }
 @media (max-width: 768px) {
     .testimonial .container .clients {
