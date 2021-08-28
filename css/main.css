@@ -511,8 +511,8 @@ nav ul li .active:hover {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
     animation-name: transform;
-    animation-delay: 10s;
-    animation-duration: 1.5s;
+    animation-delay: 20s;
+    animation-duration: 1s;
     animation-direction: reverse;
 }
 @keyframes transform {
